@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.google.ar.sceneform.plugin'
 
 android {
     compileSdkVersion 29
@@ -17,6 +18,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
 }
 
 dependencies {
@@ -24,6 +29,52 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.0.2'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
     testImplementation 'junit:junit:4.12'
+
+    // Provides ArFragment, and other UX resources.
+    implementation 'com.google.ar.sceneform.ux:sceneform-ux:1.15.0'
+
+    // Provides ArFragment, and other UX resources.
+    implementation 'com.google.ar.sceneform.ux:sceneform-ux:1.15.0'
+
+    // Alternatively, use ArSceneView without the UX dependency.
+    implementation 'com.google.ar.sceneform:core:1.15.0'
+
     androidTestImplementation 'androidx.test.ext:junit:1.1.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
 }
+
+
+sceneform.asset('../../../CLICClubWilliams/DallasZooAnimalModels/Zebra/Zebra.fbx',
+        'default',
+        '../../../CLICClubWilliams/DallasZooAnimalModels/Zebra/Zebra.sfa',
+        'src/main/assets/models/Zebra')
+
+sceneform.asset('../../../CLICClubWilliams/DallasZooAnimalModels/Cheetah/Cheetah.fbx',
+        'default',
+        '../../../CLICClubWilliams/DallasZooAnimalModels/Cheetah/Cheetah.sfa',
+        'src/main/assets/models/Cheetah')
+
+sceneform.asset('../../../CLICClubWilliams/DallasZooAnimalModels/Giraffe/Giraffe.fbx',
+        'default',
+        '../../../CLICClubWilliams/DallasZooAnimalModels/Giraffe/Giraffe.sfa',
+        'src/main/assets/models/Giraffe')
+
+sceneform.asset('../../../CLICClubWilliams/DallasZooAnimalModels/Gorilla/Gorilla.fbx',
+        'default',
+        '../../../CLICClubWilliams/DallasZooAnimalModels/Gorilla/Gorilla.sfa',
+        'src/main/assets/models/Gorilla')
+
+sceneform.asset('../../../CLICClubWilliams/DallasZooAnimalModels/Penguin/Penguin.fbx',
+        'default',
+        '../../../CLICClubWilliams/DallasZooAnimalModels/Penguin/Penguin.sfa',
+        'src/main/assets/models/Penguin')
+
+sceneform.asset('../../../CLICClubWilliams/DallasZooAnimalModels/Tiger/Tiger.fbx',
+        'default',
+        '../../../CLICClubWilliams/DallasZooAnimalModels/Tiger/Tiger.sfa',
+        'src/main/assets/models/Tiger')
+
+sceneform.asset('../../../CLICClubWilliams/DallasZooAnimalModels/Tortoise/Tortoise.fbx',
+        'default',
+        '../../../CLICClubWilliams/DallasZooAnimalModels/Tortoise/Tortoise.sfa',
+        'src/main/assets/models/Tortoise')

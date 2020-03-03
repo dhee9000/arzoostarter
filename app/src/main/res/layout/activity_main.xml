@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
 
-    <fragment android:name="com.google.ar.sceneform.samples.augmentedimage.AugmentedImageFragment"
+    <fragment android:name="com.codestream.arzoo.AugmentedImageFragment"
         android:id="@+id/ux_fragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
@@ -15,8 +15,8 @@
 
     <ImageView
         android:id="@+id/image_view_fit_to_scan"
-        android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_width="match_parent"
         android:layout_gravity="center"
         android:scaleType="fitCenter"
         android:src="@drawable/fit_to_scan"
