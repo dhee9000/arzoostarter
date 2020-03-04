@@ -44,37 +44,37 @@ dependencies {
 }
 
 
-sceneform.asset('../../../CLICClubWilliams/DallasZooAnimalModels/Zebra/Zebra.fbx',
+sceneform.asset('../modelsFBX/Zebra/Zebra.fbx',
         'default',
-        '../../../CLICClubWilliams/DallasZooAnimalModels/Zebra/Zebra.sfa',
+        '../modelsFBX/Zebra/Zebra.sfa',
         'src/main/assets/models/Zebra')
 
-sceneform.asset('../../../CLICClubWilliams/DallasZooAnimalModels/Cheetah/Cheetah.fbx',
+sceneform.asset('../modelsFBX/Cheetah/Cheetah.fbx',
         'default',
-        '../../../CLICClubWilliams/DallasZooAnimalModels/Cheetah/Cheetah.sfa',
+        '../modelsFBX/Cheetah/Cheetah.sfa',
         'src/main/assets/models/Cheetah')
 
-sceneform.asset('../../../CLICClubWilliams/DallasZooAnimalModels/Giraffe/Giraffe.fbx',
+sceneform.asset('../modelsFBX/Giraffe/Giraffe.fbx',
         'default',
-        '../../../CLICClubWilliams/DallasZooAnimalModels/Giraffe/Giraffe.sfa',
+        '../modelsFBX/Giraffe/Giraffe.sfa',
         'src/main/assets/models/Giraffe')
 
-sceneform.asset('../../../CLICClubWilliams/DallasZooAnimalModels/Gorilla/Gorilla.fbx',
+sceneform.asset('../modelsFBX/Gorilla/Gorilla.fbx',
         'default',
-        '../../../CLICClubWilliams/DallasZooAnimalModels/Gorilla/Gorilla.sfa',
+        '../modelsFBX/Gorilla/Gorilla.sfa',
         'src/main/assets/models/Gorilla')
 
-sceneform.asset('../../../CLICClubWilliams/DallasZooAnimalModels/Penguin/Penguin.fbx',
+sceneform.asset('../modelsFBX/Penguin/Penguin.fbx',
         'default',
-        '../../../CLICClubWilliams/DallasZooAnimalModels/Penguin/Penguin.sfa',
+        '../modelsFBX/Penguin/Penguin.sfa',
         'src/main/assets/models/Penguin')
 
-sceneform.asset('../../../CLICClubWilliams/DallasZooAnimalModels/Tiger/Tiger.fbx',
+sceneform.asset('../modelsFBX/Tiger/Tiger.fbx',
         'default',
-        '../../../CLICClubWilliams/DallasZooAnimalModels/Tiger/Tiger.sfa',
+        '../modelsFBX/Tiger/Tiger.sfa',
         'src/main/assets/models/Tiger')
 
-sceneform.asset('../../../CLICClubWilliams/DallasZooAnimalModels/Tortoise/Tortoise.fbx',
+sceneform.asset('../modelsFBX/Tortoise/Tortoise.fbx',
         'default',
-        '../../../CLICClubWilliams/DallasZooAnimalModels/Tortoise/Tortoise.sfa',
+        '../modelsFBX/Tortoise/Tortoise.sfa',
         'src/main/assets/models/Tortoise')

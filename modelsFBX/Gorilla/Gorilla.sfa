@@ -1,0 +1,62 @@
+{
+  animations: [
+    {
+      path: '../../../CLICClubWilliams/DallasZooAnimalModels/Gorilla/Gorilla.fbx',
+    },
+  ],
+  materials: [
+    {
+      name: 'gorilla_M',
+      parameters: [
+        {
+          baseColor: [
+            0.80000000000000004,
+            0.80000000000000004,
+            0.80000000000000004,
+            1,
+          ],
+        },
+        {
+          baseColorMap: null,
+        },
+        {
+          normalMap: null,
+        },
+        {
+          interpolatedColor: null,
+        },
+        {
+          metallic: 0,
+        },
+        {
+          metallicMap: null,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          roughnessMap: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+      'BoneIndices',
+      'BoneWeights',
+    ],
+    collision: {},
+    file: '../../../CLICClubWilliams/DallasZooAnimalModels/Gorilla/Gorilla.fbx',
+    name: 'Gorilla',
+    recenter: 'root',
+    scale: 0.79033699999999996,
+  },
+  version: '0.54:2',
+}

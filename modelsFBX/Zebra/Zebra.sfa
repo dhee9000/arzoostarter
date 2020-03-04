@@ -1,0 +1,68 @@
+{
+  animations: [
+    {
+      path: '../../../CLICClubWilliams/DallasZooAnimalModels/Zebra/Zebra.fbx',
+    },
+  ],
+  materials: [
+    {
+      name: 'Material.005',
+      parameters: [
+        {
+          baseColor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColorMap: 'Zebra_Material_Albedo',
+        },
+        {
+          normalMap: null,
+        },
+        {
+          interpolatedColor: null,
+        },
+        {
+          metallic: 0,
+        },
+        {
+          metallicMap: null,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          roughnessMap: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+      'BoneIndices',
+      'BoneWeights',
+    ],
+    collision: {},
+    file: '../../../CLICClubWilliams/DallasZooAnimalModels/Zebra/Zebra.fbx',
+    name: 'Zebra',
+    recenter: 'root',
+  },
+  samplers: [
+    {
+      file: '../../../CLICClubWilliams/DallasZooAnimalModels/Zebra/Zebra_Material_Albedo.png',
+      name: 'Zebra_Material_Albedo',
+      pipeline_name: 'C:\\Users\\Elias Manley\\Desktop\\Zoo Animal Models\\Zebra\\Zebra_Material_Albedo.png',
+    },
+  ],
+  version: '0.54:2',
+}
