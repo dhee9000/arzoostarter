@@ -1,7 +1,7 @@
 {
   animations: [
     {
-      path: '../../../CLICClubWilliams/DallasZooAnimalModels/Penguin/Penguin.fbx',
+      path: 'app/../modelsFBX/Penguin/Penguin.fbx',
     },
   ],
   materials: [
@@ -53,7 +53,7 @@
       'BoneWeights',
     ],
     collision: {},
-    file: '../../../CLICClubWilliams/DallasZooAnimalModels/Penguin/Penguin.fbx',
+    file: 'app/../modelsFBX/Penguin/Penguin.fbx',
     name: 'Penguin',
     recenter: 'root',
   },

@@ -1,4 +1,4 @@
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
+apply plugin: 'com.google.ar.sceneform.plugin'// Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
     repositories {
@@ -26,3 +26,44 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+
+sceneform.asset('app/../modelsFBX/Cheetah/Cheetah.fbx',
+        'default',
+        'app/../modelsFBX/Cheetah/Cheetah.sfa',
+        'app/src/main/assets/models/Cheetah')
+
+sceneform.asset('app/../modelsFBX/Giraffe/Giraffe.fbx',
+        'default',
+        'app/../modelsFBX/Giraffe/Giraffe.sfa',
+        'app/src/main/assets/models/Giraffe')
+
+sceneform.asset('app/../modelsFBX/Gorilla/Gorilla.fbx',
+        'default',
+        'app/../modelsFBX/Gorilla/Gorilla.sfa',
+        'app/src/main/assets/models/Gorilla')
+
+sceneform.asset('app/../modelsFBX/Penguin/Penguin.fbx',
+        'default',
+        'app/../modelsFBX/Penguin/Penguin.sfa',
+        'app/src/main/assets/Penguin')
+
+sceneform.asset('app/../modelsFBX/Tiger/Tiger.fbx',
+        'default',
+        'app/../modelsFBX/Tiger/Tiger.sfa',
+        'app/src/main/assets/models/Tiger')
+
+sceneform.asset('app/../modelsFBX/Tortoise/Tortoise.fbx',
+        'default',
+        'app/../modelsFBX/Tortoise/Tortoise.sfa',
+        'app/src/main/assets/models/Tortoise')
+
+sceneform.asset('app/../modelsFBX/Zebra/Zebra.fbx',
+        'default',
+        'app/../modelsFBX/Zebra/Zebra.sfa',
+        'app/src/main/assets/models/Zebra')
+
+sceneform.asset('app/../modelsFBX/Tiger/Tiger.fbx',
+        'default',
+        'app/../modelsFBX/Tiger/Tiger.sfa',
+        'app/src/main/assets/Tiger')

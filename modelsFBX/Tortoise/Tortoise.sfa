@@ -1,7 +1,7 @@
 {
   animations: [
     {
-      path: '../../../CLICClubWilliams/DallasZooAnimalModels/Tortoise/Tortoise.fbx',
+      path: 'app/../modelsFBX/Tortoise/Tortoise.fbx',
     },
   ],
   materials: [
@@ -53,7 +53,7 @@
       'BoneWeights',
     ],
     collision: {},
-    file: '../../../CLICClubWilliams/DallasZooAnimalModels/Tortoise/Tortoise.fbx',
+    file: 'app/../modelsFBX/Tortoise/Tortoise.fbx',
     name: 'Tortoise',
     recenter: 'root',
   },

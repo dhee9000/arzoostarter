@@ -1,7 +1,7 @@
 {
   animations: [
     {
-      path: '../../../CLICClubWilliams/DallasZooAnimalModels/Zebra/Zebra.fbx',
+      path: 'app/../modelsFBX/Zebra/Zebra.fbx',
     },
   ],
   materials: [
@@ -53,13 +53,13 @@
       'BoneWeights',
     ],
     collision: {},
-    file: '../../../CLICClubWilliams/DallasZooAnimalModels/Zebra/Zebra.fbx',
+    file: 'app/../modelsFBX/Zebra/Zebra.fbx',
     name: 'Zebra',
     recenter: 'root',
   },
   samplers: [
     {
-      file: '../../../CLICClubWilliams/DallasZooAnimalModels/Zebra/Zebra_Material_Albedo.png',
+      file: 'app/../modelsFBX/Zebra/Zebra_Material_Albedo.png',
       name: 'Zebra_Material_Albedo',
       pipeline_name: 'C:\\Users\\Elias Manley\\Desktop\\Zoo Animal Models\\Zebra\\Zebra_Material_Albedo.png',
     },

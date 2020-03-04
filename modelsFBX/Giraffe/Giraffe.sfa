@@ -1,7 +1,7 @@
 {
   animations: [
     {
-      path: '../../../CLICClubWilliams/DallasZooAnimalModels/Giraffe/Giraffe.fbx',
+      path: 'app/../modelsFBX/Giraffe/Giraffe.fbx',
     },
   ],
   materials: [
@@ -53,7 +53,7 @@
       'BoneWeights',
     ],
     collision: {},
-    file: '../../../CLICClubWilliams/DallasZooAnimalModels/Giraffe/Giraffe.fbx',
+    file: 'app/../modelsFBX/Giraffe/Giraffe.fbx',
     name: 'Giraffe',
     recenter: 'root',
     scale: 0.76989799999999997,

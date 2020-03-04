@@ -69,11 +69,6 @@ sceneform.asset('../modelsFBX/Penguin/Penguin.fbx',
         '../modelsFBX/Penguin/Penguin.sfa',
         'src/main/assets/models/Penguin')
 
-sceneform.asset('../modelsFBX/Tiger/Tiger.fbx',
-        'default',
-        '../modelsFBX/Tiger/Tiger.sfa',
-        'src/main/assets/models/Tiger')
-
 sceneform.asset('../modelsFBX/Tortoise/Tortoise.fbx',
         'default',
         '../modelsFBX/Tortoise/Tortoise.sfa',
