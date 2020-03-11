@@ -14,6 +14,7 @@ public class Animal {
 
     private static final String imageName = "Animal.png";
     private static final String modelURI = "models/Zebra.sfb";
+    private final String name = "Animal";
     public CompletableFuture<ModelRenderable> model;
 
     public Animal(Context context){
@@ -27,6 +28,8 @@ public class Animal {
     public String getImageName(){
         return imageName;
     }
+
+    public String getName(){ return name; }
 
     public CompletableFuture<ModelRenderable> getModel(){
         return this.model;

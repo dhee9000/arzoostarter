@@ -1,14 +1,18 @@
 package com.codestream.arzoo;
 
 import android.content.Context;
-import android.net.Uri;
 import android.util.Log;
+import android.view.View;
+import android.widget.TextView;
+
 import com.google.ar.core.AugmentedImage;
 import com.google.ar.sceneform.AnchorNode;
 import com.google.ar.sceneform.Node;
 import com.google.ar.sceneform.math.Quaternion;
 import com.google.ar.sceneform.math.Vector3;
 import com.google.ar.sceneform.rendering.ModelRenderable;
+import com.google.ar.sceneform.rendering.ViewRenderable;
+
 import java.util.concurrent.CompletableFuture;
 
 /**
@@ -20,13 +24,11 @@ public class AugmentedImageNode extends AnchorNode {
 
     private static final String TAG = "AugmentedImageNode";
     private AugmentedImage image;
-    private static CompletableFuture<ModelRenderable> ulCorner;
+    private static CompletableFuture<ModelRenderable> nodeRenderable;
+    private Context context;
 
     public AugmentedImageNode(Context context) {
-        // Upon construction, start loading the models for the corners of the frame.
-        if (ulCorner == null) {
-            ulCorner = new Animal(context).getModel();
-        }
+        this.context = context;
     }
 
     /**
@@ -37,11 +39,26 @@ public class AugmentedImageNode extends AnchorNode {
      */
     @SuppressWarnings({"AndroidApiChecker", "FutureReturnValueIgnored"})
     public void setImage(AugmentedImage image) {
+
         this.image = image;
+        Animal animal;
+
+        if(this.image.getName().equals("Zebra.png")){
+            animal = new Zebra(context);
+        }
+        // if(...equals("Cheetah.png") ... etc. etc. ADD OTHER ANIMAL IF STATEMENTS HERE, CREATE OTHER ANIMAL CLASSES
+        else{
+            animal = new Animal(context);
+        }
+
+        // Upon setting image, start loading the models for the animal.
+        if (nodeRenderable == null) {
+            nodeRenderable = animal.getModel();
+        }
 
         // If any of the models are not loaded, then recurse when all are loaded.
-        if (!ulCorner.isDone()) {
-            CompletableFuture.allOf(ulCorner)
+        if (!nodeRenderable.isDone()) {
+            CompletableFuture.allOf(nodeRenderable)
                     .thenAccept((Void aVoid) -> setImage(image))
                     .exceptionally(
                             throwable -> {
@@ -68,7 +85,20 @@ public class AugmentedImageNode extends AnchorNode {
         centerNode.setLocalPosition(localPosition);
         centerNode.setLocalScale(localScale);
         centerNode.setLocalRotation(localRotation);
-        centerNode.setRenderable(ulCorner.getNow(null));
+        centerNode.setRenderable(nodeRenderable.getNow(null));
+
+        // CREATE NEW NODE FOR THE TEXT
+        Node animalNameNode = new Node();
+        // BUILD THE VIEW RENDERABLE
+        ViewRenderable.builder().setView(context, R.layout.animal_name).build()
+                .thenAccept(viewRenderable -> {
+                    // ONCE THE RENDERABLE IS READY, ADD IT TO THE NODE and SET POSITION
+                   animalNameNode.setRenderable(viewRenderable);
+                   View arAnimalNameView = viewRenderable.getView();
+                    TextView animalName = (TextView)arAnimalNameView.findViewById(R.id.animal_name);
+                    animalName.setText(animal.getName());
+                   animalNameNode.setLocalPosition(new Vector3(1, 1, 1));
+                });
     }
 
     public AugmentedImage getImage() {
